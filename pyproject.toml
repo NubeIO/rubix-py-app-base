@@ -7,6 +7,7 @@ authors = ["NubeIO <tech-support@nube-io.com>"]
 [tool.poetry.dependencies]
 python = "^3.6"
 gunicorn = "^20.0.4"
+click = "^7.1.2"
 gevent = [
     { version = "20.12.1", markers = "platform_machine == 'x86_64'" },
     { git = "https://github.com/gevent/gevent.git", tag = "20.12.1", markers = "platform_machine != 'x86_64'" }

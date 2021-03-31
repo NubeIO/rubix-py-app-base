@@ -27,6 +27,7 @@ class AppSetting:
     default_global_dir = 'out'
     default_data_dir: str = 'data'
     default_config_dir: str = 'config'
+    default_setting_file: str = 'config.json'
     default_logging_conf: str = 'logging.conf'
     fallback_logging_conf: str = 'config/logging.example.conf'
     fallback_prod_logging_conf: str = 'config/logging.prod.example.conf'

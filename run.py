@@ -24,7 +24,7 @@ def number_of_workers():
 @click.option('-c', '--config-dir', type=click.Path(), help='Application config dir',
               default=lambda: os.environ.get(AppSetting.CONFIG_DIR_ENV))
 @click.option('--prod', is_flag=True, help='Production mode')
-@click.option('-s', '--setting-file', help='Setting json file')
+@click.option('-s', '--setting-file', help='Setting json file', default=AppSetting.default_setting_file)
 @click.option('-l', '--logging-conf', help='Logging config file')
 @click.option('--workers', type=int, help='Gunicorn: The number of worker processes for handling requests.')
 @click.option('--gunicorn-config', help='Gunicorn: config file(gunicorn.conf.py)')

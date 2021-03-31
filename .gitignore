@@ -14,14 +14,15 @@ data.db
 
 __pycache__/
 *.pyc
+logging.conf
+config.ini
+dist/
+*.egg-info
 
 build/
 dist/
 out/*
 !out/.gitkeep
-
 !docker/.env
-
-*.iml
 *.spec
-
+*.iml
